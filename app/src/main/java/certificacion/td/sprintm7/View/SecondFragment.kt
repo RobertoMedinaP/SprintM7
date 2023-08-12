@@ -62,8 +62,8 @@ class SecondFragment : Fragment() {
             //Cargar los textos e imagenes
             Glide.with(binding.imageView).load(it.imagen).into(binding.imageView)
             binding.tv1.text = it.id.toString()
-            binding.tv2.text = it.nombre
-            binding.tv3.text = it.tipo
+            binding.tv2.text = "Nombre: "+it.nombre
+            binding.tv3.text = "Tipo: "+it.tipo
             binding.tv4.text = it.descripcion
 
             var name = it.nombre
