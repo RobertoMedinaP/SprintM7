@@ -9,5 +9,8 @@
 
     <string name="lorem_ipsum">Planta seleccionada</string>
     <string name="elija">Elija una planta</string>
+    <string name="contacto">Contacto</string>
+    <string name="salir">Salir</string>
+
 
 </resources>

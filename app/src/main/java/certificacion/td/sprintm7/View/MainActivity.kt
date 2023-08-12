@@ -1,5 +1,7 @@
 package certificacion.td.sprintm7.View
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +12,8 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.PopupMenu
 import certificacion.td.sprintm7.R
 import certificacion.td.sprintm7.databinding.ActivityMainBinding
 
@@ -45,10 +49,38 @@ class MainActivity : AppCompatActivity() {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
-            R.id.action_settings -> true
+            R.id.contacto -> {
+
+                val intent = Intent(Intent.ACTION_SEND)
+                intent.data = Uri.parse("mailto")
+                intent.type = "text/plain"
+
+                intent.putExtra(Intent.EXTRA_EMAIL, arrayOf("luci@plantapp.cl"))
+                intent.putExtra(
+                    Intent.EXTRA_SUBJECT,
+                    "Consulta por plantas"
+                )
+                intent.putExtra(
+                    Intent.EXTRA_TEXT, "Hola\n" +
+                            "Vi la app de plantas \n" +
+                            "Me gustaría que me contactaran a este correo o al siguiente número:___________\n" +
+                            "Quedo atento"
+                )
+                startActivity(intent)
+
+                true
+            }
+            R.id.salir->{
+
+                finishAffinity()
+                true
+            }
             else -> super.onOptionsItemSelected(item)
+
         }
     }
+
+
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
