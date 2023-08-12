@@ -2,4 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background">#000000</color>
+    <color name="surface">#202124</color>
+    <color name="on_surface">#FFFFFFFF</color>
+    <color name="on_surface_variant">#DADCE0</color>
+    <color name="on_background">#FFFFFFFF</color>
+    <color name="error">#EE675C</color>
+    <color name="on_error">#202124</color>
+    <color name="primary">#AECBFA</color>
+    <color name="primary_variant">#6694DE</color>
+    <color name="secondary">#FDE293</color>
+    <color name="secondary_variant">#FDD663</color>
 </resources>

@@ -46,9 +46,9 @@ class FirstFragment : Fragment() {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
 
-        val adapter= PlantAdapter()
-       binding.rv1.adapter=adapter
-        binding.rv1.layoutManager = GridLayoutManager(context,2)
+        val adapter = PlantAdapter()
+        binding.rv1.adapter = adapter
+        binding.rv1.layoutManager = GridLayoutManager(context, 2)
 
         viewModel.getPlantList().observe(viewLifecycleOwner, Observer {
             it?.let {
@@ -66,8 +66,6 @@ class FirstFragment : Fragment() {
             }
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment, bundle)
         })
-
-
 
     }
 

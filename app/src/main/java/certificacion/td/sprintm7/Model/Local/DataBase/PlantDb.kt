@@ -8,17 +8,22 @@ import certificacion.td.sprintm7.Model.Local.Entities.PlantByIdEntity
 import certificacion.td.sprintm7.Model.Local.Entities.PlantEntity
 import certificacion.td.sprintm7.Model.Local.PlantDao
 
-@Database(entities = [PlantEntity::class, PlantByIdEntity::class], version = 1, exportSchema = false)
-abstract class PlantDb: RoomDatabase() {
+@Database(
+    entities = [PlantEntity::class, PlantByIdEntity::class],
+    version = 1,
+    exportSchema = false
+)
+abstract class PlantDb : RoomDatabase() {
 
     abstract fun getPlantDao(): PlantDao
 
-    companion object{
+    companion object {
 
         @Volatile
         private var
-                INSTANCE : PlantDb? = null
-        fun getDataBase(context: Context) : PlantDb {
+                INSTANCE: PlantDb? = null
+
+        fun getDataBase(context: Context): PlantDb {
             val tempInstance = INSTANCE
             if (tempInstance != null) {
                 return tempInstance
@@ -26,7 +31,8 @@ abstract class PlantDb: RoomDatabase() {
             synchronized(this) {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
-                    PlantDb::class.java, "plantDb")
+                    PlantDb::class.java, "plantDb"
+                )
                     .build()
                 INSTANCE = instance
                 return instance

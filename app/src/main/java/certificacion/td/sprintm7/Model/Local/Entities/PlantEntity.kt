@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 
 
 @Entity(tableName = "plant_table")
-data class PlantEntity (
+data class PlantEntity(
 
     @PrimaryKey
     val id: Int,

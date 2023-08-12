@@ -12,6 +12,6 @@ interface PlantApi {
     suspend fun fetchPlantList(): Response<List<Plant>>
 
     @GET("plantas/{id}")
-    suspend fun fetchPlantByID(@Path("id")id: String): Response<PlantById>
+    suspend fun fetchPlantByID(@Path("id") id: String): Response<PlantById>
 
 }

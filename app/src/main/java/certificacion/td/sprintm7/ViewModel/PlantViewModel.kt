@@ -11,7 +11,7 @@ import certificacion.td.sprintm7.Model.Local.Entities.PlantEntity
 import certificacion.td.sprintm7.Model.PlantRepository
 import kotlinx.coroutines.launch
 
-class PlantViewModel(application: Application): AndroidViewModel(application) {
+class PlantViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repository: PlantRepository
 

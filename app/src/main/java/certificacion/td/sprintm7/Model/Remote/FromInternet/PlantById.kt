@@ -1,6 +1,6 @@
 package certificacion.td.sprintm7.Model.Remote.FromInternet
 
-data class PlantById (
+data class PlantById(
     val id: Int,
     val nombre: String,
     val tipo: String,
