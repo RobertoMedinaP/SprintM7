@@ -40,7 +40,8 @@
                     android:id="@+id/tv1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?attr/textAppearanceTitleMedium" />
+                    android:textAppearance="?attr/textAppearanceTitleMedium"
+                    app:fontFamily="@font/roboto" />
 
                 <TextView
                     android:id="@+id/tv2"
@@ -49,7 +50,8 @@
                     android:layout_marginTop="8dp"
                     android:textAppearance="?attr/textAppearanceBodyMedium"
                     android:textColor="?android:attr/textColorSecondary"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    app:fontFamily="@font/roboto" />
 
                 <TextView
                     android:id="@+id/tv3"
@@ -58,7 +60,8 @@
                     android:layout_marginTop="16dp"
                     android:textAppearance="?attr/textAppearanceBodyMedium"
                     android:textColor="?android:attr/textColorSecondary"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    app:fontFamily="@font/roboto" />
 
                 <TextView
                     android:id="@+id/tv4"
@@ -67,7 +70,8 @@
                     android:layout_marginTop="16dp"
                     android:textAppearance="?attr/textAppearanceBodyMedium"
                     android:textColor="?android:attr/textColorSecondary"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    app:fontFamily="@font/roboto" />
 
             </LinearLayout>
 
