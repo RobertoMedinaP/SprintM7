@@ -77,7 +77,7 @@ class SecondFragment : Fragment() {
                 intent.putExtra(Intent.EXTRA_EMAIL, arrayOf("luci@plantapp.cl"))
                 intent.putExtra(
                     Intent.EXTRA_SUBJECT,
-                    "Consulta por producto" + name
+                    "Consulta por producto " + name
                 )
                 intent.putExtra(
                     Intent.EXTRA_TEXT, "Hola\n" +
